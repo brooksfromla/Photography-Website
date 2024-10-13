@@ -1,0 +1,16 @@
+const popupMenu = document.getElementById("popup-menu");
+const navigation = document.querySelector("nav");
+const portfoliobtn = document.getElementById("portfolio-btn");
+const portfolioFolders = document.querySelectorAll(".dropdown-menu");
+const image = document.querySelectorAll("img");
+
+popupMenu.addEventListener("click", () => {
+    navigation.classList.toggle("toggleNav");
+})
+
+portfoliobtn.addEventListener("click", () => {
+    portfolioFolders.forEach(folder => {
+        folder.classList.toggle("show-items");
+    })
+    console.log("dropdown menu")
+});
