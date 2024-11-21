@@ -4,45 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>About</title>
-</head>
-<body>
-    <main>
+    <style>
+        .dropbtn {
+          background-color: #04AA6D;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
 
-        <header>
-            <h1>Photography</h1>
-            <nav class="main-nav">
-                <a href="index.html">Home</a>
-                <a href="portfolio1.html" id="portfolio-btn">Portfolio
-                    <nav class="dropdown-menu">
-                        <a href="portfolio1.html">Sports</a>
-                        <a href="portfolio2.html">Nature</a>
-                    </nav>
-                </a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <span id="popup-menu"><i class="fa-solid fa-bars"></i></span>
-        </header>
-        <div class="content">
-            <!--CHANGE CONTENT TO HERE TO YOUR LIKING-->
-            <h2>About Me</h2>
-            <p>Hello! I'm happy to see you here. My name is Garrett Brooks, and I am among other things a photographer. I’ve done work on genealogy in the past as well, but my main job currently is working in retail. I’m a college student at College of the Canyons majoring in communication, due to the fact that I have a lot of possible routes to go down. I’ve been taking photos for over three years with my DSLR, but I first started with my camera at the age of 7 with a small handheld Canon camera. I’ve been surrounded by cameras my entire life. Photography wise, I have done shoots with my friends for their LinkedIn and their Instagram, and I have also done a more professional shoot for a bridal party. As I do not have much experience so far with professional photography, my rates are cheaper than most which is great for you, the consumer, because that way you can get a good photographer for less!</p>
-            <p>My rates at this time are:</p>
-            <p><h2>$60-75/hr</h2> (depending on event, could be less - please inquire about booking!) </p>
-            <p>The longer I am at the event, the cheaper the overall price will be. For example, if you were to book me for a 6-hr long event, I will charge about $330. Depending on the event prices will vary, so this is not set in stone. It depends on what it is for, who you are, etc. </p>
-            <p>Basically what I want from you if you want to book me is communication. I major in it so it’s not a problem for me. I can work with a budget as well. The last time I did an event I had almost one thousand photos, many of which worked for the guest and was able to make lifelong memories out of the photos. </p>
-            <p></p>
-            <p>I also edit photos as well, depending on the circumstances.</p>
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        </style>
+    <div class="dropdown">
+        <button class="dropbtn">Portfolio</button>
+        <div class="dropdown-content">
+            <a href="portfolio1.html">Sports</a>
+            <a href="portfolio2.html">Nature</a>
         </div>
-        <footer>
-            <nav class="socials-btn">
-                <a href="https://www.linkedin.com/in/garrett-brooks-044b55262/"><i class="fa-brands fa-linkedin"></i></a> <!--THE HREF VALUE SHOULD THE LINK TO THE CORRESPONDING SOCIAL PAGE-->
-                <a href="https://www.instagram.com/cameragcb/"><i class="fa-brands fa-square-instagram"></i></a> <!--THE HREF VALUE SHOULD THE LINK TO THE CORRESPONDING SOCIAL PAGE-->
-            </nav>
-        </footer>
-    </main>
-    <script src="https://kit.fontawesome.com/dcc7f78c61.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-</body>
-</html>
+    </div>
+            <title>About</title>
+        </head>
+        <body>
+            <main>
+
+                <header>
+                    <h1>Photography</h1>
+                    <nav class="main-nav">
+                        <a href="index.html">Home</a>
+                        <a href="#" id="portfolio-btn">Portfolio
+                            <nav class="dropdown-menu">
+                                <a href="portfolio1.html">Sports</a>
+                                <a href="portfolio2.html">Nature</a>
+                            </nav>
+                        </a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                    <span id="popup-menu"><i class="fa-solid fa-bars"></i></span>
+                </header>
+                <div class="content">
+                    <!--CHANGE CONTENT TO HERE TO YOUR LIKING-->
+                    <h2>About Me</h2>
+                    <p>Hello! I'm happy to see you here. My name is Garrett Brooks, and I am among other things a photographer. I’ve done work on genealogy in the past as well, but my main job currently is working in retail. I’m a college student at College of the Canyons majoring in communication, due to the fact that I have a lot of possible routes to go down. I’ve been taking photos for over three years with my DSLR, but I first started with my camera at the age of 7 with a small handheld Canon camera. I’ve been surrounded by cameras my entire life. Photography wise, I have done shoots with my friends for their LinkedIn and their Instagram, and I have also done a more professional shoot for a bridal party. As I do not have much experience so far with professional photography, my rates are cheaper than most which is great for you, the consumer, because that way you can get a good photographer for less!</p>
+                    <p>My rates at this time are:</p>
+                    <p><h2>$60-75/hr</h2> (depending on event, could be less - please inquire about booking!) </p>
+                    <p>The longer I am at the event, the cheaper the overall price will be. For example, if you were to book me for a 6-hr long event, I will charge about $330. Depending on the event prices will vary, so this is not set in stone. It depends on what it is for, who you are, etc. </p>
+                    <p>Basically what I want from you if you want to book me is communication. I major in it so it’s not a problem for me. I can work with a budget as well. The last time I did an event I had almost one thousand photos, many of which worked for the guest and was able to make lifelong memories out of the photos. </p>
+                    <p></p>
+                    <p>I also edit photos as well, depending on the circumstances.</p>
+                </div>
+                <footer>
+                    <nav class="socials-btn">
+                        <a href="https://www.linkedin.com/in/garrett-brooks-044b55262/"><i class="fa-brands fa-linkedin"></i></a> <!--THE HREF VALUE SHOULD THE LINK TO THE CORRESPONDING SOCIAL PAGE-->
+                        <a href="https://www.instagram.com/cameragcb/"><i class="fa-brands fa-square-instagram"></i></a> <!--THE HREF VALUE SHOULD THE LINK TO THE CORRESPONDING SOCIAL PAGE-->
+                    </nav>
+                </footer>
+            </main>
+            <script src="https://kit.fontawesome.com/dcc7f78c61.js" crossorigin="anonymous"></script>
+            <script src="index.js"></script>
+        </body>
+        </html>
