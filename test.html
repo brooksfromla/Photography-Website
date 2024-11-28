@@ -18,19 +18,12 @@
         text-align: center;
     }
     .image {
-        width: 300px;
-        height: 200px;
-        background-color: gray;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 20px;
-        text-decoration: none;
-        border: 2px solid black;
-    }
-    .image:hover {
-        background-color: darkgray;
+        display: block;
+        margin: 0 auto;
+        border: 5px solid black; /* Thicker border */
+        max-width: 80%; /* Image will not exceed 80% of the page width */
+        height: auto; /* Maintain the image's aspect ratio */
+        cursor: pointer;
     }
     h2 {
         margin-top: 10px;
