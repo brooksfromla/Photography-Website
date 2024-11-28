@@ -7,30 +7,29 @@
   <style>
     body {
         background-color: beige;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
         margin: 0;
         font-family: Arial, sans-serif;
     }
     .container {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
         text-align: center;
     }
     a {
-        text-decoration: none; /* Remove link underline */
-        outline: none; /* Remove focus outline around the link */
+        text-decoration: none;
+        outline: none;
     }
     .image {
         display: block;
-        margin: 0 auto;
-        border:
-        max-width: 80%; /* Image will not exceed 80% of the page width */
-        height: auto; /* Maintain the image's aspect ratio */
+        width: 100px; /* Smaller image size */
+        height: auto;
+        border: 3px solid black; /* Thinner border */
         cursor: pointer;
     }
     h2 {
-        margin-top: 10px;
+        margin-top: 5px;
+        font-size: 14px; /* Smaller text size */
     }
   </style>
 </head>
